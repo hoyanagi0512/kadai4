@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+	<TITLE>三目並べ</TITLE>
+	<SCRIPT>
+		var obj = 0;
+
+		function pic_chg(no){
+			if(obj < 9){
+				if(obj % 2 == 0){
+					document.images[no].src = "青.png";
+				}
+				else{
+					document.images[no].src = "橙.png";
+				}
+				obj++;
+			}
+
+		}
+
+	</SCRIPT>
+</HEAD>
+<BODY>
+
+<CENTER>
+		<p>
+<img src="上.png" width="700" height="50" /></p>
+<FONT SIZE ="5">●○　三目並べ　○●</FONT><BR><BR><BR>
+<TABLE BORDER="5" BORDERCOLOR="BLACK" CELLSPACING="0" FRAME="VOID">
+<TR width="90" height="90">
+<TD width="90"><IMG SRC="無.png" onClick="pic_chg(0)"></TD>
+<TD width="90"><IMG SRC="無.png" onClick="pic_chg(1)"></TD>
+<TD width="90"><IMG SRC="無.png" onClick="pic_chg(2)"></TD>
+</TR>
+<TR width="90" height="100">
+<TD width="90"><IMG SRC="無.png" onClick="pic_chg(3)"></TD>
+<TD width="90"><IMG SRC="無.png" onClick="pic_chg(4)"></TD>
+<TD width="90"><IMG SRC="無.png" onClick="pic_chg(5)"></TD>
+</TR>
+<TR width="90" height="90">
+<TD width="90"><IMG SRC="無.png" onClick="pic_chg(6)"></TD>
+<TD width="90"><IMG SRC="無.png" onClick="pic_chg(7)"></TD>
+<TD width="90"><IMG SRC="無.png" onClick="pic_chg(8)"></TD>
+</TR>
+</TABLE>
+		<p>
+<img src="下.png" width="700" height="400" /></p>
+</CENTER>
+</BODY>
+</HTML>
